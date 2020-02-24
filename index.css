@@ -1,10 +1,14 @@
 body {
   background:#fff;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight:300;
+  font-family: 'Lato';
   color:#2b2b2b;
   margin:0;
-  font-size:1.3em;
+  padding:0;
+  font-size:1.4em;
+  line-height:180%;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
 }
 
 a {
@@ -12,90 +16,146 @@ a {
   color:#2b2b2b;
 }
 
-#wrapper {
-  display:flex;
-  justify-content:center;
-  align-content:center;
-  align-items:center;
-  height:100vh;
-  width:80vw;
-  padding:0 3em;
-}
-
-@media screen and (max-width: 730px) {
-  #wrapper {
-    padding: 3em;
-  }
+nav {
+  font-family: 'Karla' ;
 }
 
 #name {
-  font-size:2.5em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight:300;
-  text-transform:uppercase;
+  position:absolute;
+  font-weight:700;
 }
 
-#description {
-  margin-top:2em;
-  letter-spacing:.1em;
-  margin-bottom:2em;
+#links {
+  margin-left:200px;
+  text-align:right;
 }
 
-#projects {
-  margin-bottom:2.5em;
+#wrapper {
+  margin:4em auto;
+  width:80vw;
 }
 
-#projects li {
-  line-height:180%;
-  letter-spacing:.03em;
-}
-
-#projects li a {
-  box-shadow:0px -1px #e2e2e2 inset;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-#projects li a:hover {
-  box-shadow:0px -10px #e2e2e2 inset;
-}
-
-#resume {
-  font-family: 'Montserrat', sans-serif;
-  text-transform:uppercase;
-  font-size:.7em;
-  border:1px solid #2b2b2b;
-  padding:1em;
-  background:#2b2b2b;
-  color:#fff;
-  letter-spacing:.2em;
-  border-radius:.3em;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-#resume:hover {
-  cursor: pointer;
-  background:#fff;
+#links a:first-child {
+  margin-right:1em;
   color:#2b2b2b;
 }
 
-#resume a {
+#links a {
+  color:#777;
+}
+
+#intro {
+  margin-top: 3em;
+}
+
+#firstLine {
+  font-family: 'Karla';
+  text-transform: uppercase;
+  font-weight:700;
+  font-size:2em;
+  margin-bottom:1em;
+}
+
+#extendedBio {
+  margin-bottom:2.5em;
+}
+
+#extendedBio b {
+  font-weight:400;
+  background:#FDEBC0;
+}
+
+#externalLinks {
+  margin-bottom:3em;
+}
+
+#externalLinks a, .viewProject {
+  font-family: 'Karla';
+  font-size:.9em;
+  border-radius:.3em;
+  font-weight:700;
+  text-transform: uppercase;
+}
+
+#resume, .viewProject {
+  background:#2F2AFA;
   color:#fff;
+  padding:.5em 1em;
+  margin-right:1em;
 }
 
-#socials {
-  margin-top:2.5em;
+#email {
+  color:#2F2AFA;
+  background:#fff;
+  padding:.5em 1em;
+  border:1px solid #aaa;
 }
 
-.socialicon {
-  display:inline-block;
-  margin-left:2em;
+#scrollDown {
+  background:#eaeaea;
+  padding:.6em 1em;
+  font-weight:900;
+  border-radius:4em;
+  text-transform: uppercase;
+  font-size:.6em;
 }
 
-.socialicon:first-child {
-  margin-left:0;
+#selectedWorks {
+  margin-top:6em;
 }
+
+#selectedTitle {
+  font-family: 'Karla';
+  text-transform: uppercase;
+  font-weight:700;
+  font-size:1.7em;
+  margin-bottom:2em;
+}
+
+.selectedConatiner {
+  margin-bottom:6em;
+  display:grid;
+  grid-template-columns: 40vw 40vw;
+}
+
+.projectInfo {
+  padding-right:3em;
+}
+
+.workPreview {
+  width:100%;
+  border-radius:.3em;
+  /*box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);*/
+}
+
+.projectName {
+  font-weight:700;
+  font-size:1.4em;
+  margin-bottom:.7em;
+}
+
+.timeDuration {
+  opacity:.7;
+  margin:.5em 0;
+  font-size:.8em;
+}
+
+.tags {
+  margin-bottom:1em;
+}
+
+.tags item {
+  background: #EAEAEA;
+  font-size:.6em;
+  font-weight:700;
+  padding:.5em 1em;
+  border-radius: 4em;
+}
+
+.projectDescript {
+  font-size:.8em;
+  margin-bottom:1.5em;
+}
+
+
+  

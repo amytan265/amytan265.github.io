@@ -1,8 +1,8 @@
 <!--
 
-Amy Tan Under Construction Landing Page
-Version 1.0
-Last Updated: 1/5/2019
+Amy Tan 
+Version 1.5
+Last Updated: 2/23/2020
 
 -->
 
@@ -14,7 +14,7 @@ Last Updated: 1/5/2019
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/amytan265/amytan265.github.io/master/favicon.ico" />
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Lato:300,400,400i,700,700i,900&display=swap" rel="stylesheet">
   <!--https://github.com/amytan265/Candyland/blob/master/Assets/index.css-->
   <link href="index.css" rel="stylesheet" type="text/css">
 </head>
@@ -23,40 +23,158 @@ Last Updated: 1/5/2019
 <body>
 
   <div id="wrapper">
-    <div id="content">
 
-      <div id="name">Amy Tan</div>
+    <nav>
+      <div id="name"><a href="http://amytan.me/">Amy Tan</a></div>
+      <div id="links">
+        <a href="/">Work</a>
+        <a href="/">About</a>
+      </div>
+    </nav>
 
-      <div id="description">
-        <p>I am currently in the process of revamping my portfolio.</p>
-        <p>If you have any inquiries, feel free to reach out!</p>
-      </div><!--end of description-->
+    <div id="intro">
+      <div id="firstLine">Hello, I'm Amy 👋</div>
+      <div id="extendedBio">
+      I am a second year student at Rochester Institute of Technology majoring in <b>human-centered computing</b> with planned concentrations in <b>front-end development</b> and <b>accessibility.</b>
+      </div>
+      <div id="externalLinks">
+      <a target="_blank" href="assets/pdfs/Amy Tan Resume.pdf" id="resume">view resume</a> <a target="_blank" href="mailto:at5330@g.rit.edu" id="email">let's chat</a>
+      </div>
+      <item id="scrollDown">↓ scroll down to see my works</item>
+    <!--end of intro-->
+    </div>
 
-      <div id="projects">
-        <p><b>Selected work:</b></p>
-        <ul>
-          <li><a target="_blank" href="https://nemurou.tumblr.com/">Tumblr blog layouts</a> 💻 </li>
-          <li><a target="_blank" href="https://github.com/amytan265/Candyland">Candyland, a game programmed in Java</a> 🍭 </li>
-          <li><a target="_blank" href="https://www.dropbox.com/s/3zq8xksiubjwshy/poster.pdf?dl=0">Skincare Mobile App designed on Illustrator</a> 💆🏻 </li>
-          <li><a target="_blank" href="http://amytan.me/Spoons/">Spoons, a visual novel game based on the Spoon Theory</a> 🥄 </li>
-        </ul>
+    <div id="selectedWorks">
+      <div id="selectedTitle">selected work</div>
 
+      <div class="selectedConatiner">
+        <div class="projectInfo">
+          <div class="projectName">Blog Layouts</div>
+          <!---<div class="timeDuration">August 2017 • Ongoing</div>-->
+          <div class="tags">
+            <item>HTML/CSS</item>
+            <item>JavaScript</item>
+            <item>UI & UX Design</item>
+            <item>Side Project</item>
+          </div>
+          <div class="projectDescript">A collection of 20+ Tumblr themes and pages designed and developed for public use.</div>
+          <a target="_blank" class="viewProject" href="https://nemurou.tumblr.com/portfolio">see the project</a>
+        </div>
+        <div><img class="workPreview" src="assets/images/transtumblr.png"></div>
+      <!--end of container-->
       </div>
 
-      <a target="_blank" href="https://www.dropbox.com/s/5avyjodp84kep7c/Amy%20Tan%20Resume.pdf?dl=0"><span id="resume">View my resume</span></a>
+      <div class="selectedConatiner">
+        <div class="projectInfo">
+          <div class="projectName">SkinVitalize</div>
+          <!---<div class="timeDuration">August 2017 • Ongoing</div>-->
+          <div class="tags">
+            <item>UI & UX Design</item>
+            <item>Wireframe</item>
+            <item>Prototype</item>
+            <item>Figma</item>
+          </div>
+          <div class="projectDescript">A curated skin care shopping platform that recommends products for the user's skin type and skin problems.</div>
+          <a target="_blank" class="viewProject" href="https://www.figma.com/proto/CxzZouNexKkdVVPW66tcop/Skincare-Shopping-App?node-id=1%3A2&scaling=scale-down">see the project</a>
+        </div>
+        <div><img class="workPreview" src="assets/images/skinvitalize.png"></div>
+      <!--end of container-->
+      </div>
 
-      <div id="socials">
-        <div class="socialicon"><a title="e-mail" href="mailto:at5330@g.rit.edu"><i class="far fa-envelope"></i></a></div>
-        <div class="socialicon"><a target="_blank" title="github" href="https://github.com/amytan265"><i class="fab fa-github"></i></a></div>
-        <div class="socialicon"><a target="_blank" title="linkedin" href="https://www.linkedin.com/in/at5330/"><i class="fab fa-linkedin-in"></i></a></div>
-        <div class="socialicon"><a target="_blank" title="instagram" href="https://www.instagram.com/_softblankets/"><i class="fab fa-instagram"></i></a></div>
-        <div class="socialicon"><a target="_blank" title="tumblr" href="https://nemurou.tumblr.com/"><i class="fab fa-tumblr"></i></a></div>
-      </div><!--end of socials-->
-    </div><!--end of content-->
-  </div><!--end of wrapper-->
+      <div class="selectedConatiner">
+        <div class="projectInfo">
+          <div class="projectName">Candyland</div>
+          <!---<div class="timeDuration">December 2019 • 2 Weeks</div>-->
+          <div class="tags">
+            <item>Java</item>
+            <item>Git</item>
+          </div>
+          <div class="projectDescript">Special cards and a chat box are included in this classic racing board game.</div>
+          <a target="_blank" class="viewProject" href="https://github.com/amytan265/Candyland">see the project</a>
+        </div>
+        <div><img class="workPreview" src="assets/images/candyland.png"></div>
+      <!--end of container-->
+      </div>
+
+      <div class="selectedConatiner">
+        <div class="projectInfo">
+          <div class="projectName">simpleXcode</div>
+          <!---<div class="timeDuration">December 2019 • 2 Weeks</div>-->
+          <div class="tags">
+            <item>UI & UX Design</item>
+            <item>HTML/CSS</item>
+            <item>JavaScript</item>
+            <item>PHP</item>
+          </div>
+          <div class="projectDescript">Website that teaches users basic web development through HTML/CSS and JavaScript lessons and quizzes.</div>
+          <a target="_blank" class="viewProject" href="assets/pdfs/simpleXcode.pdf">see the project</a>
+        </div>
+        <div><img class="workPreview" src="assets/images/simplexcode.png"></div>
+      <!--end of container-->
+      </div>
+
+      <div class="selectedConatiner">
+        <div class="projectInfo">
+          <div class="projectName">Visit NYC</div>
+          <!---<div class="timeDuration">December 2019 • 2 Weeks</div>-->
+          <div class="tags">
+            <item>UI & UX Design</item>
+            <item>HTML/CSS</item>
+            <item>JavaScript</item>
+            <item>PHP</item>
+          </div>
+          <div class="projectDescript">Informational tourism website for New York City.</div>
+          <a target="_blank" class="viewProject" href="https://people.rit.edu/~at5330/iste240/midterm/">see the project</a>
+        </div>
+        <div><img class="workPreview" src="assets/images/nyc.png"></div>
+      <!--end of container-->
+      </div>
+
+      <div class="selectedConatiner">
+        <div class="projectInfo">
+          <div class="projectName">Skin Care App Poster</div>
+          <!---<div class="timeDuration">December 2019 • 2 Weeks</div>-->
+          <div class="tags">
+            <item>Illustrator</item>
+            <item>UI Design</item>
+          </div>
+          <div class="projectDescript">Promotional poster for a skin care app concept.</div>
+          <a target="_blank" class="viewProject" href="assets/pdfs/skincareposter.pdf">see the project</a>
+        </div>
+        <div><img class="workPreview" src="assets/images/skinposter.png"></div>
+      <!--end of container-->
+      </div>
+
+      <div class="selectedConatiner">
+        <div class="projectInfo">
+          <div class="projectName">Spoons</div>
+          <!---<div class="timeDuration">December 2019 • 2 Weeks</div>-->
+          <div class="tags">
+            <item>Game Development</item>
+            <item>Ren'Py</item>
+            <item>HTML/CSS</item>
+            <item>Photoshop</item>
+          </div>
+          <div class="projectDescript">A PC visual novel game based on the Spoons Theory.
+          </div>
+          <a target="_blank" class="viewProject" href="http://amytan.me/Spoons/">see the project</a>
+        </div>
+        <div><img class="workPreview" src="assets/images/spoons.png"></div>
+      <!--end of container-->
+      </div>
+
+    <!--end of selected works-->
+    </div>
+
+  <!--end of wrapper-->
+  </div>
+
+  
 
 
 </body>
+
+
 
 
 
