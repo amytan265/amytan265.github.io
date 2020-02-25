@@ -87,7 +87,6 @@ nav {
   }
 }
 
-
 #resume, .viewProject {
   background:#2F2AFA;
   color:#fff;
@@ -127,6 +126,18 @@ nav {
   margin-bottom:6em;
   display:grid;
   grid-template-columns: 40vw 40vw;
+}
+
+@media only screen and (max-width: 950px) {
+  .selectedConatiner {
+    display:grid;
+    grid-template-row: auto auto;
+    grid-template-columns: 80vw;
+  }
+
+  .workPreview{
+    margin-top:2.3em;
+  }
 }
 
 .projectInfo {
