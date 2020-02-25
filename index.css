@@ -44,11 +44,11 @@ nav {
   color:#888;
 }
 
-#intro {
+#intro, #aboutWrapper {
   margin-top: 3em;
 }
 
-#firstLine {
+#firstLine, #contact {
   font-family: 'Karla';
   text-transform: uppercase;
   font-weight:700;
@@ -60,7 +60,7 @@ nav {
   margin-bottom:2.5em;
 }
 
-#extendedBio b {
+#extendedBio b, #aboutBio b {
   font-weight:400;
   background:#FDEBC0;
 }
@@ -178,6 +178,39 @@ nav {
   font-size:.8em;
   margin-bottom:1.5em;
 }
+
+#aboutWrapper {
+  display:grid;
+  grid-template-columns:50vw 30vw;
+}
+
+#aboutWrapper a {
+  text-decoration: underline;
+}
+
+#aboutBio {
+  padding-right:6em;
+}
+
+@media only screen and (max-width: 910px) {
+  #aboutWrapper {
+    display:grid;
+    grid-template-row: auto auto;
+    grid-template-columns: 80vw;
+  }
+
+  #aboutBio {
+    padding-right:0;
+  }
+}
+
+#portrait {
+  width:100%;
+  margin-bottom:.7em;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius:.3em;
+}
+
 
 
   
