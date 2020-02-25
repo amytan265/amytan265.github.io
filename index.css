@@ -18,15 +18,15 @@ a {
 
 nav {
   font-family: 'Karla' ;
+  display:grid;
+  grid-template-columns:40vw 40vw;
 }
 
 #name {
-  position:absolute;
   font-weight:700;
 }
 
 #links {
-  margin-left:200px;
   text-align:right;
 }
 
@@ -41,7 +41,7 @@ nav {
 }
 
 #links a {
-  color:#777;
+  color:#888;
 }
 
 #intro {
@@ -76,6 +76,17 @@ nav {
   font-weight:700;
   text-transform: uppercase;
 }
+
+@media only screen and (max-width: 450px) {
+  #externalLinks a {
+    display:inline-block;
+  }
+
+  #externalLinks a:last-child {
+    margin-top:1em;
+  }
+}
+
 
 #resume, .viewProject {
   background:#2F2AFA;
