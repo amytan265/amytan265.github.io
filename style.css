@@ -22,7 +22,7 @@ a {
     text-decoration: none;
 }
 
-a, b, i {
+a, b, i, h3, h2, h1 {
     color: #181717;
 }
 
@@ -30,8 +30,12 @@ a:hover {
     color: #8a89b6;
 }
 
-h2 {
+h1, h2, h3 {
+    font-weight: 400;
     font-family: 'Georgia', serif;
+}
+
+h3 {
     font-size: 20px;
 }
 
@@ -72,8 +76,12 @@ nav {
     padding-top: 16px;
 }
 
+#projectHeader {
+    margin-top: 6em;
+}
+
 #project {
-    margin: 6em auto 6em auto;
+    margin: 32px auto 6em auto;
     display: grid;
     width: 100%;
     grid-template-columns: 370px 370px;
