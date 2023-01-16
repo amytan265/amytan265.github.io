@@ -2,10 +2,10 @@ body {
     background: #fff;
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
-    line-height: 160%;
-    color: #4f4f4f;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 180%;
+    color: #181717;
 }
 
 ::-moz-selection{ 
@@ -22,86 +22,101 @@ a {
     text-decoration: none;
 }
 
-a, b, i, h3, h2, h1 {
+#content a {
+    text-decoration: underline;
+}
+
+a, b, i, h4, h3, h2, h1 {
     color: #181717;
 }
 
 a:hover {
-    color: #8a89b6;
+    color: #666;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, figcaption {
     font-weight: 400;
-    font-family: 'Georgia', serif;
-}
-
-h3 {
-    font-size: 20px;
+    font-family: 'Playfair Display', serif;
 }
 
 #wrapper {
-    width: 800px;
-    margin: 6em auto;
+    width: 60vw;
+    margin: 2em auto 8em auto;
 }
 
 nav {
-    font-family: 'Georgia', serif;
-    width: 100%;
     margin: auto;
+    height:70px;
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: 400px 400px;
     align-items: center;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 16px;
+    width: 80vw;
+    padding: 2em 0;
+    grid-template-columns: auto auto;
 }
 
-#name, .pName {
+#name {
+    font-weight: 700;
     font-size: 20px;
     color: #181717;
 }
 
-#links {
+#links, #fLinks {
     text-align: right;
 }
 
 #links a:hover {
-    color: #8a89b6;
+    color: #666;
 }
 
 #links a {
+    font-size: 14px;
+}
+
+#links a, #fLinks a {
     margin-left: 16px;
 }
 
-#tagline {
-    padding-top: 16px;
+.current, .under {
+    border-bottom: 1px solid #666;
 }
 
-#projectHeader {
-    margin-top: 6em;
+#tagline {
+    width: 60vw;
+    font-size: 32px;
+    line-height:160%;
+    margin:4em auto;
+    padding-top: 16px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+#work {
+    width: 60vw;
+    margin:2em auto;
+    line-height:160%;
+    font-weight: 700;
 }
 
 #project {
-    margin: 32px auto 6em auto;
+    margin: auto;
     display: grid;
     width: 100%;
-    grid-template-columns: 370px 370px;
-    gap: 60px 60px;
+    grid-template-columns: auto;
+    gap: 8em 0;
+
+}
+
+.ex h2{
+    line-height:180%;
 }
 
 .cover {
     width: 100%;
 }
 
-.pName {
-    margin-top:8px;
-}
-
 .pDesc {
-    margin: 8px 0 ;
-}
-
-.pCat {
-    color: #aaa;
+    font-size: 14px;
 }
 
 #content {
@@ -109,9 +124,20 @@ nav {
     width: 100%;
 }
 
-@media only screen and (max-width: 901px) {
+footer {
+    font-size: 14px;
+    margin: auto;
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+    width: 80vw;
+    padding: 2em 0 4em 0;
+    grid-template-columns: auto auto;
+}
 
-    #wrapper {
+@media only screen and (max-width: 1301px) {
+
+    nav, #wrapper, #tagline, #project, #work, footer {
         width: 80vw;
     }
 
@@ -120,7 +146,7 @@ nav {
     }
 
     #project {
-        width: 80vw;
         grid-template-columns: auto;
+
     }
   }
