@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Amy Tan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/amytan265/amytan265.github.io/master/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://amytan.me/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <nav>
+        <div id="name">Amy Tan</div>
+        <div id="links">
+            <a href="https://amytan.me/">Work</a>
+            <a href="https://amytan.me/about">About</a>
+            <a href="https://amytan.me/assets/pdf/Amy Tan Resume.pdf">Resume</a>
+        </div>
+    </nav>
+
+    <img class="projectCover" src="cloud.png">
+
+    <div class="projectContent">
+
+        <h2>Cloud</h2>
+        <p>
+            <b>Client:</b> Solo project
+            <br><b>Role:</b> Concept, UX/UI
+            <br><b>Software:</b> Figma 
+            <br><b>Duration:</b> 5 weeks 
+        </p>
+        <p>Cloud is an AI powdered cloud doodle app for <a href="https://www.govisland.com/">Governors Island</a>. Users can take photos of clouds, create and share cloud doodles, and learn about cloud types.</p>
+
+    </div>
+
+
+    <div class="projectContent">
+
+        <b>Ideation</b>
+        <p>In the city that never sleeps, Governors Island is a weekend getaway for New Yorkers to escape the fast paced city life. The island has 120 acres of open space and car-free environment, allowing visitors to enjoy various recreational activities such as picnicking, biking, and relaxing with family and friends.</p>
+        <p>When I was given the task of designing a mobile app for Governors Island, I thought about my many trips to the island which consisted of catching up with friends on a grass field. We would have picnics, read books, and people watch.</p>
+
+    </div>
+
+    <img class="projectImg" src="https://amytan.me/assets/img/cloud/cloud mind map.jpeg">
+    <figcaption>Fig 1. Brainstorming possibilities for my app</figcaption>
+
+    <div class="projectContent">
+
+        <p>Due to time constraints, I was unable to conduct user interviews. Instead, I looked up Google reviews on Governors Island to find more information on who are the people visiting the island, and how they spent their time there. I found that people who left reviews were mostly New York City residents and occasional tourists.</p>
+        <ul>
+            <li>"It's a total escape from the hustle and bustle of NYC within NYC." -Anonymous</li>
+            <li>"This is the best and easiest getaway from the city. The ferry is so quick and cheap. It is truly a magical island, and you just need to experience it for yourself." -Rachel B.</li>
+            <li>"Perfect for riding a bike with the wind blowing through your hair, picnicking with your love, kids enjoying fun playgrounds, or soak up the sun and be in the moment. It’s the perfect getaway from the busy surrounding NYC boroughs." -Jo</li>
+        </ul>
+        <p>I started brainstorming possibilities for my product design, starting with the most commonly mentioned activities. People who typically come to Governors Island stay for a couple of hours; they are looking to relax with family and friends, connect with nature, and escape from the city. I wanted my app to embody what Governors Island represented: a peaceful retreat. What is something that can be done to pass time, with little to no equipment, and suitable for both children and adults? Cloud watching was my answer.</p>
+    
+    </div>
+
+    <div class="projectContent">
+        <b>Comparative Analysis</b>
+        <p>My initial idea was to design a cloud watching app where users could take and share photos of clouds, and learn about different cloud types. However, upon conducting my analysis on existing cloud watching apps (CloudSpotter, Atmosphere, and Cloud-a-Day), I discovered that all of them incorporated similar features.</p>
+        <p>As I questioned how I could separate my app from competitors, I thought about what made cloud watching enjoyable. The fun of cloud watching lies in identifying clouds that resemble things in real life. This became my opportunity for the solution: an app for cloud doodles.</p>
+    </div>
+
+    <img class="projectImg" src="https://amytan.me/assets/img/cloud/cloud sketches.png">
+    <figcaption>Fig 2. Initial sketches of signature moments</figcaption>
+
+    <div class="projectContent">
+        <b>User Personas</b>
+    </div>
+
+    <div class="alumni-container">
+
+        <div class="alumniSlides">
+          <img src="https://amytan.me/assets/img/cloud/cloud persona 1.png" style="width:100%">
+        </div>
+        
+        <div class="alumniSlides">
+          <img src="https://amytan.me/assets/img/cloud/cloud persona 2.png" style="width:100%">
+        </div>
+        
+        <div class="alumniSlides">
+          <img src="https://amytan.me/assets/img/cloud/cloud persona 3.png" style="width:100%">
+        </div>
+                
+    </div>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("alumniSlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    
+    <figcaption>Click on the circles above to view all 3 user personas.</figcaption>
+
+    <div class="projectContent">
+      <b>Journey Map</b>
+      <p>The story I ended up telling imagines one of my user personas, Ariel, trying the app for the first time. She is a middle school science teacher and wants to incorporate an activity to supplement her meteorology lessons.</p>
+    </div>
+
+    <img class="projectImg" src="https://amytan.me/assets/img/cloud/cloud journey map.png">
+    <figcaption>Fig 3. Ariel's journey map</figcaption>
+
+    <div class="projectContent">
+      <b>Wireframes</b>
+    </div>
+
+    <img class="projectImg" src="https://amytan.me/assets/img/cloud/cloud wireframes.png">
+    <figcaption>Fig 4. Low fidelity wireframes</figcaption>
+
+    <div class="projectContent">
+      <b>Final Designs</b>
+      <p>I decided to showcase Cloud through a series of short vignettes that captured signature moments. The six moments I chose to focus on were: creating an account; filtering through different cloud doodles on the home screen; taking a photo and doodling over it; uploading a picture and changing cloud type; learning about different types of clouds; and viewing user profile.</p>
+    </div>
+
+
+
+</body>
+
+</html>
