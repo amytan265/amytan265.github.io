@@ -80,11 +80,16 @@ nav {
 #tagline {
     width: 60vw;
     font-size: 32px;
-    line-height:180%;
     margin:4em auto;
     padding-top: 16px;
     font-family: 'Playfair Display', serif;
 
+}
+
+#tagline-bio {
+    margin-top:1em;
+    font-size:20px;
+    font-family: 'Inter', sans-serif;
 }
 
 #work {
@@ -186,7 +191,7 @@ figcaption {
 
 @media only screen and (max-width: 1301px) {
 
-    nav, #wrapper, #tagline, #project, #work, footer, #content, .projectContent, figcaption {
+    nav, #wrapper, #tagline, #tagline-bio #project, #work, footer, #content, .projectContent, figcaption {
         width: 80vw;
     }
 
