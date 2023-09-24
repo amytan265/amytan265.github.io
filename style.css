@@ -104,7 +104,7 @@ nav {
     display: grid;
     width: 100%;
     grid-template-columns: auto;
-    gap: 8em 0;
+    gap: 2em 0;
 
 }
 
